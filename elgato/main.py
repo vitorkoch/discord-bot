@@ -3,10 +3,11 @@ import os
 
 class MyClient(discord.Client):
     async def on_ready(self):
-        print("Logged on as {0}!".format(self.user))
+        print(f"Bot {self.user} ON!")
+        
 
     async def on_message(self, message):
-        print("Message from {0.author}: {0.content}".format(message))
+        print(f"Message from {message.author}: {message.content}")
         if message.content == "!regras":
             await message.channel.send(f"As regras do servidor são:{os.linesep}Regra 1: Não desrespeitar os membros{os.linesep}Regra 2: blá blá blá")
         if message.content == "el gato":
