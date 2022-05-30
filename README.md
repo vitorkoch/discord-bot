@@ -1,4 +1,4 @@
-# Botzin do Discord
+# discord
 
 Área de testes para o nosso bot do discord
 
