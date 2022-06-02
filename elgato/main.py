@@ -1,10 +1,10 @@
 import discord
 import os
 
+
 class MyClient(discord.Client):
     async def on_ready(self):
         print(f'Bot {self.user} ON!')
-        
 
     async def on_message(self, message):
         print(f'Message from {message.author}: {message.content}')
@@ -18,6 +18,7 @@ class MyClient(discord.Client):
             await message.channel.send(file=discord.File('images/boanoite.jpeg'))
         if message.content == 'el gato bebe':
             await message.channel.send('<:elgato:977977352409722910>')
+
 
 client = MyClient()
 client.run('OTgwNTI2MTgwNDA0OTY5NTQz.GG80_a.GMAjovO7yOFNQGREwe2ReBlWuqmtNFRlJFxWU4')
