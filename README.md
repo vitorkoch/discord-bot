@@ -1,6 +1,6 @@
 # Botzin do Discord
 
-Área de testes para o nosso bot do discord
+Área de testes para o meu bot do discord
 
 ---
 
