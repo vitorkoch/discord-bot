@@ -9,3 +9,5 @@
 - [Site de permissões](https://discordapi.com/permissions.html)  
 - [Site de Desenvolvimento do Discord](https://discord.com/developers/applications)  
 - [Download da lib](https://pypi.org/project/discord.py/)
+
+Obs.: Pode usar meu código, apenas mude o token conforme mostra o tutorial <3
