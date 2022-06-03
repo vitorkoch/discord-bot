@@ -18,7 +18,12 @@ class MyClient(discord.Client):
             await message.channel.send(file=discord.File('images/boanoite.jpeg'))
         if message.content == 'el gato bebe':
             await message.channel.send('<:elgato:977977352409722910>')
-
+        if message.content == '!weka':
+            await message.channel.send(f'@{message.author}, Aqui: https://docs.google.com/spreadsheets/d/1u043DjKpAY6tLJDxC7WieIYLFZZficPzeseuwvJ88j8/edit?usp=sharing')
+        if message.content == 'chama todo mundo':
+            await message.channel.send('@everyone, vem aqui')
+        if message.content == 'gay':
+            await message.channel.send(f'Tu que é gay {message.author}')
 
 client = MyClient()
-client.run('OTgwNTI2MTgwNDA0OTY5NTQz.GG80_a.GMAjovO7yOFNQGREwe2ReBlWuqmtNFRlJFxWU4')
+client.run('OTgwNTI2MTgwNDA0OTY5NTQz.GwWMf1.s_4jVauK81cFkamgeVwyRKnAHgFzjV1Bpdm5lc')
