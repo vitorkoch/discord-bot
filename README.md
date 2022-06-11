@@ -10,4 +10,4 @@
 - [Site de Desenvolvimento do Discord](https://discord.com/developers/applications)  
 - [Download da lib](https://pypi.org/project/discord.py/)
 
-Obs.: Pode usar meu código, apenas mude o token conforme mostra o tutorial <3
+Obs.: Para conseguir usar não esqueça de mudar seu token confome mostra o tutorial!
