@@ -16,7 +16,7 @@ class MyClient(discord.Client):
             )
         if message.content.lower() == 'el gato':
             await message.channel.send(file=discord.File('elgato/elgato.jpg'))
-        if message.content.lower()== 'if' or message.content == 'ifpa':
+        if message.content.lower() == 'if' or message.content == 'ifpa':
             await message.channel.send('Destruidor de saúde mental')
         if message.content.lower() == 'boa noite':
             await message.channel.send(file=discord.File('images/boanoite.jpeg'))
@@ -28,8 +28,6 @@ class MyClient(discord.Client):
             )
         if message.content.lower() == 'chama todo mundo':
             await message.channel.send('@everyone, vem aqui')
-        if message.content.lower() == 'gay':
-            await message.channel.send(f'Tu que é gay {message.author}')
 
 
 client = MyClient()
