@@ -4,9 +4,9 @@ import os
 # TODO => Deixar o bot ON
 class MyClient(discord.Client):
     async def on_ready(self):
-        print('=' * 20)
+        print('=-' * 10)
         print(f'Bot {self.user} ON!')
-        print('=' * 20)
+        print('=-' * 10)
 
     async def on_message(self, message):
         print(f'Message from {message.author}: {message.content}')
