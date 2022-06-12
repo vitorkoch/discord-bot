@@ -17,7 +17,7 @@ class MyClient(discord.Client):
         if message.content == 'el gato':
             await message.channel.send(file=discord.File('elgato/elgato.jpg'))
         if message.content == 'if' or message.content == 'ifpa':
-            await message.channel.send('Uma merda')
+            await message.channel.send('Destruidor de saúde mental')
         if message.content == 'boa noite':
             await message.channel.send(file=discord.File('images/boanoite.jpeg'))
         if message.content == 'el gato bebe':
