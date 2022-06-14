@@ -1,7 +1,11 @@
 import discord
 import os
 
-# TODO => Deixar o bot ON
+
+def read(message):
+    return message.content.strip().lower()
+
+
 class MyClient(discord.Client):
     async def on_ready(self):
         print('=-' * 10)
@@ -10,23 +14,26 @@ class MyClient(discord.Client):
 
     async def on_message(self, message):
         print(f'Message from {message.author}: {message.content}')
-        if message.content.lower() == '!regras':
+        if read(message) == '!regras':
             await message.channel.send(
                 f'As regras do servidor são:{os.linesep}Regra 1: Não desrespeitar os membros{os.linesep}Regra 2: blá blá blá'
             )
-        if message.content.lower() == 'el gato':
+        if read(message) == 'el gato':
             await message.channel.send(file=discord.File('elgato/elgato.jpg'))
-        if message.content.lower() == 'if' or message.content == 'ifpa':
+        if read(message) == 'if' or message.content == 'ifpa':
             await message.channel.send('Destruidor de saúde mental')
-        if message.content.lower() == 'boa noite':
+        if read(message) == 'boa noite':
             await message.channel.send(file=discord.File('images/boanoite.jpeg'))
-        if message.content.lower() == 'el gato bebe':
+        if read(message) == 'el gato bebe':
             await message.channel.send('<:elgato:977977352409722910>')
-        if message.content.lower() == '!weka':
+        if read(message) == '!weka':
             await message.channel.send(
                 f'@{message.author}, Aqui: https://docs.google.com/spreadsheets/d/1u043DjKpAY6tLJDxC7WieIYLFZZficPzeseuwvJ88j8/edit?usp=sharing'
             )
-        if message.content.lower() == 'chama todo mundo':
+        if (
+            read(message) == 'chama todo mundo'
+            or read(message) == 'el gato chama todo mundo'
+        ):
             await message.channel.send('@everyone, vem aqui')
 
 
