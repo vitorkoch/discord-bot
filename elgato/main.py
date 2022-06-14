@@ -1,5 +1,5 @@
 import discord
-import os
+from os import linesep as br  # Break Line          
 
 
 def read(message):
@@ -16,7 +16,7 @@ class MyClient(discord.Client):
         print(f'Message from {message.author}: {message.content}')
         if read(message) == '!regras':
             await message.channel.send(
-                f'As regras do servidor são:{os.linesep}Regra 1: Não desrespeitar os membros{os.linesep}Regra 2: blá blá blá'
+                f'As regras do servidor são:{br}Regra 1: Não desrespeitar os membros{br}Regra 2: blá blá blá'
             )
         if read(message) == 'el gato':
             await message.channel.send(file=discord.File('elgato/elgato.jpg'))

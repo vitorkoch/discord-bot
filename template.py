@@ -1,4 +1,9 @@
 import discord
+from os import linesep as br  # Break line
+
+
+def read(message):
+    return message.content.strip().lower()
 
 
 class MyClient(discord.Client):
