@@ -1,5 +1,5 @@
 import discord
-from os import linesep as br  # Break Line          
+from os import linesep as br  # Break Line
 
 
 def read(message):
@@ -35,6 +35,8 @@ class MyClient(discord.Client):
             or read(message) == 'el gato chama todo mundo'
         ):
             await message.channel.send('@everyone, vem aqui')
+        if read(message) == '!chika':
+            await message.channel.send(file=discord.File('images/chika.gif'))
 
 
 client = MyClient()
