@@ -1,6 +1,6 @@
 import discord
 from os import linesep as br  # Break Line
-
+from Token import token # Arquivo apenas com uma variável chamada token com meu token do discord
 
 def read(message):
     return message.content.strip().lower()
@@ -20,16 +20,10 @@ class MyClient(discord.Client):
             )
         if read(message) == 'el gato':
             await message.channel.send(file=discord.File('elgato/elgato.jpg'))
-        if read(message) == 'if' or message.content == 'ifpa':
+        if read(message) == 'if' or read(message) == 'ifpa':
             await message.channel.send('Destruidor de saúde mental')
         if read(message) == 'boa noite':
             await message.channel.send(file=discord.File('images/boanoite.jpeg'))
-        if read(message) == 'el gato bebe':
-            await message.channel.send('<:elgato:977977352409722910>')
-        if read(message) == '!weka':
-            await message.channel.send(
-                f'@{message.author}, Aqui: https://docs.google.com/spreadsheets/d/1u043DjKpAY6tLJDxC7WieIYLFZZficPzeseuwvJ88j8/edit?usp=sharing'
-            )
         if (
             read(message) == 'chama todo mundo'
             or read(message) == 'el gato chama todo mundo'
@@ -40,4 +34,4 @@ class MyClient(discord.Client):
 
 
 client = MyClient()
-client.run('OTgwNTI2MTgwNDA0OTY5NTQz.GwWMf1.s_4jVauK81cFkamgeVwyRKnAHgFzjV1Bpdm5lc')
+client.run(token)
